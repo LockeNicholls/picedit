@@ -1,0 +1,112 @@
+body {
+    background-color: #fafafa;
+	font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    margin: 2.5% auto;
+    max-width: 1000px;
+    min-width: 1000px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4em;
+	
+}
+
+.editorHolder{
+	width: 100%;
+}
+
+form {
+	text-align: center;
+}
+
+.formHolder {
+	display: inline-block;
+	width: 340px;
+
+}
+
+.formHolder label {
+	display: inline-block;
+	margin: 10px 0 0 0;
+	width: 100px;
+	font-size: 1.1rem;
+	color: #22313F;
+	text-align: left;
+	vertical-align: top;
+}
+
+.formHolder input {
+	position: relative;
+	margin: 10px 0 0 0;
+	vertical-align: top;
+}
+
+.imageHolder{
+	display: inline-block;
+	max-width: 640px;
+	min-width: 640px;
+	max-height: 511px;
+
+}
+
+.imageHolder img{
+	max-width: 640px;
+	max-height: 511px;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border-radius: 5px;
+    
+    /*required for proper track sizing in FF*/
+    width: 150px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 7px;
+    background: #babbbe;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #DB4437;
+    margin-top: -6px;
+    vertical-align: middle;
+}
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:hover {
+	cursor: pointer;
+}
+
+#reset {
+	display: inline-block;
+	height: 2.0rem;
+	font-size: 1.3rem;
+	background: #DB4437;
+	width: 80%;
+	border-radius: 5px;
+	color #FFFFFF;
+	border: 2px solid transparent;
+	cursor: pointer;
+}
+
+#reset:hover {
+    color: #DB4437;
+    background-color: #fafafa;
+    border: 2px solid #DB4437;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Picedit</title>
+	{% load static %}
+	
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'picedit/style.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	
+</head>
+<body>
+	<div class="wrapper">
+		<h2>Image Editor</h2>
+		<div class="editorHolder">
+			<div class="imageHolder">
+				<img src="{% static 'picedit/image.jpg' %}">
+				<p></br>
+				<p></br>
+			</div>
+		
+			<div class="formHolder">
+				<form id="editor">
+					<p><br>
+					<label for "blur">Blur</label>
+					<input type="range" id="blur" name="blur"
+					min="0" max="10" value="0"/>
+					<p>
+					<label for "saturate">Saturate</label>
+					<input type="range" id="sat" name ="saturate"
+					min="0" max="400" value="100"/>
+					<p>
+					<label for "grayscale">Greyscale</label>
+					<input type="range" id="gs" name ="grayscale"
+					min="0" max="100" value="0"/>
+					<p>
+					<label for "brightness">Brightness</label>
+					<input type="range" id="bs" name ="brightness"
+					min="0" max="400" value="100"/>
+					<p>
+					<label for "contrast">Contrast</label>
+					<input type="range" id="con" name ="contrast"
+					min="0" max="400" value="100"/>
+					<p>
+					<label for "invert">Invert</label>
+					<input type="range" id="inv" name ="invert"
+					min="0" max="100" value="0"/>
+					<p>
+					<label for "sepia">Sepia</label>
+					<input type="range" id="sep" name ="sepia"
+					min="0" max="100" value="0"/>
+					<p>
+					<label for "opacity">Opacity</label>
+					<input type="range" id="op" name ="opacity"
+					min="0" max="100" value="100"/>
+					<p>
+					<label for "hue">Hue</label>
+					<input type="range" id="hue" name ="hue"
+					min="0" max="360" value="0"/>
+					<p></br>
+					
+					<input type="reset" form="editor" id="reset" value="Reset" />
+					<p><br>
+					
+					<p><br>
+				</form>
+			</div>
+		</div>
+	</div>
+		<script src="{% static 'picedit/script.js' %}"></script>
+</body>
